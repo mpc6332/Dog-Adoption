@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".jpg" />
+    <None Remove="AdoptionLogo.png" />
+    <None Remove="IconAssets\PawIcon.png" />
+    <None Remove="ImageAssets\ACCTPhilly.png" />
+    <None Remove="ImageAssets\AdoptionLogo.png" />
+    <None Remove="ImageAssets\dog1.jpg" />
+    <None Remove="ImageAssets\dog10.jpg" />
+    <None Remove="ImageAssets\dog2.jpg" />
+    <None Remove="ImageAssets\dog3.jpg" />
+    <None Remove="ImageAssets\dog4.jpg" />
+    <None Remove="ImageAssets\dog5.jpg" />
+    <None Remove="ImageAssets\dog6.jpg" />
+    <None Remove="ImageAssets\dog7.jpg" />
+    <None Remove="ImageAssets\dog8.jpg" />
+    <None Remove="ImageAssets\dog9.jpg" />
+    <None Remove="ImageAssets\PhillyPaws.png" />
+    <None Remove="Lab_DogAdoption.txt" />
+    <None Remove="TextFileAssets\Lab_DogAdoption.txt" />
+    <None Remove="WindowAssets\DogBackground.jpeg" />
+    <None Remove="WindowAssets\VerificationBackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="IconAssets\PawIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\ACCTPhilly.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\AdoptionLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog10.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog6.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog7.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog8.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\dog9.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageAssets\PhillyPaws.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TextFileAssets\Lab_DogAdoption.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WindowAssets\DogBackground.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WindowAssets\VerificationBackground.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

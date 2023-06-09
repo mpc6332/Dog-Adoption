@@ -1,0 +1,19 @@
+
+//
+//name    Breed              weight DOB      Pic    MonthsInKennel       HaveShots  Colors
+                
+       Copper,  Red boned Coonhound, 70, 4/1/2018, dog1.jpg, 10, True, Black
+       Russell, Golden Retriever,    40, 5/052010, dog2.jpg, 6, False, Golden
+       Copper, Red boned Coonhound, 70, 4/1/2018,  dog3.jpg, 4, False, Brown
+       Daisy,	Labrador Retriever,	75,	11/30/2017, dog4.jpg, 6,	True,	Black
+       Max,	German Shepherd,	85,	2016-09-12, dog5.jpg,	2,	False,	Black and Tan
+       Lucy,	Beagle,	25,	4/23/2019,	dog6.jpg,	4,	True,	Brown and White
+       Rocky,	Bulldog,	50,	12/17/2015, dog7.jpg	,12,	Yes,	White with Brown Spots
+                                                                                                        //Garbage Text
+       Luna,	Husky,	60,	8/2/2019,	dog8.jpg,	3,	True,	White and Gray   
+       
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                                                                                                                                            ut aliquip ex ea commodo consequat.
+       Max,	Golden Retriever,	70,	5/3/2019,	dog9.jpg,	1,	False,	Golden
+       Grace,	Pit Bull,	45,	8/19/2016,	dog10.jpg,	12,	True,	Brindle

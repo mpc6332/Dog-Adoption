@@ -1,0 +1,42 @@
+﻿<Window x:Name="wdw_Verification" x:Class="Lab_DogAdoption.Verification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_DogAdoption"
+        mc:Ignorable="d"
+        Title="Verification" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="wdw_Verification_Loaded" Icon="/IconAssets/PawIcon.png">
+    <Grid x:Name="grd_Main">
+        <Grid.Background>
+            <ImageBrush ImageSource="/WindowAssets/VerificationBackground.jpg" Stretch="UniformToFill" Opacity="0.2"/>
+        </Grid.Background>
+        <Rectangle x:Name="rct_warning" HorizontalAlignment="Left" Height="42" Margin="216,294,0,0" VerticalAlignment="Top" Width="344" Fill="Gainsboro" Stroke="Black"/>
+        <Button x:Name="btn_Confirm" Content="Confirm" HorizontalAlignment="Left" Margin="216,364,0,0" VerticalAlignment="Top" Width="116" Click="btn_Confirm_Click" Height="39" BorderThickness="3,3,3,3" FontSize="16" FontWeight="ExtraBold" Background="#FFD8FFB3" TabIndex="1"/>
+        <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="448,363,0,0" VerticalAlignment="Top" Width="112" Click="btn_Cancel_Click" Height="40" RenderTransformOrigin="0.513,0.553" BorderThickness="3,3,3,3" FontSize="16" FontWeight="ExtraBold" Background="#FFF6BEBE" TabIndex="2"/>
+        <Label x:Name="lbl_purchaseWarning" Content="Proceed with the adoption?" HorizontalAlignment="Left" Margin="234,295,0,0" VerticalAlignment="Top" FontWeight="UltraBold" FontSize="22"/>
+        <Image x:Name="img_vdogpic" HorizontalAlignment="Left" Height="215" Margin="16,41,0,0" VerticalAlignment="Top" Width="167"/>
+        <Label x:Name="lbl_name" Content="Name:" HorizontalAlignment="Left" Margin="188,42,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" FontSize="14" FontWeight="DemiBold"/>
+        <Label x:Name="lbl_birthDate" Content="Birthdate:" HorizontalAlignment="Left" Margin="188,73,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,-0.114" HorizontalContentAlignment="Left" FontSize="14" FontWeight="DemiBold"/>
+        <Label x:Name="lbl_breed" Content="Breed:" HorizontalAlignment="Left" Margin="188,104,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" FontSize="14" FontWeight="DemiBold"/>
+        <Label x:Name="lbl_weight" Content="Weight (in pounds):" HorizontalAlignment="Left" Margin="188,134,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" FontSize="14" FontWeight="DemiBold"/>
+        <Label x:Name="lbl_shotUpdate" Content="Is up-to-date on shots?" HorizontalAlignment="Left" Margin="188,165,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" FontSize="14" FontWeight="DemiBold"/>
+        <Label x:Name="lbl_monthsInKennel" Content="Months in kennel:" HorizontalAlignment="Left" Margin="188,195,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" FontSize="14" FontWeight="DemiBold"/>
+        <Label x:Name="lbl_color" Content="Main color:" HorizontalAlignment="Left" Margin="188,229,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" FontSize="14" FontWeight="DemiBold"/>
+        <Image x:Name="img_AdoptionLogo" HorizontalAlignment="Left" Height="130" Margin="31,273,0,0" VerticalAlignment="Top" Width="138" Source="/ImageAssets/AdoptionLogo.png"/>
+        <TextBox x:Name="txt_donationBox" HorizontalAlignment="Left" Margin="542,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontSize="14" FontWeight="DemiBold" GotFocus="txt_donationBox_GotFocus" LostFocus="txt_donationBox_LostFocus" Tag="0.00" TabIndex="0"/>
+        <Label x:Name="lbl_dollarSign" Content="$" HorizontalAlignment="Left" Margin="524,74,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold"/>
+        <Label x:Name="lbl_donationText" Content="Consider making a donation today!" HorizontalAlignment="Left" Margin="533,45,0,0" VerticalAlignment="Top" FontSize="14" Width="235" FontWeight="SemiBold"/>
+        <Label x:Name="lbl_donationError" Content="" HorizontalAlignment="Left" Margin="580,279,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="UltraBold" Foreground="Red" Height="124" Width="196"/>
+        <Label x:Name="lbl_ghostText" Content="0.00" HorizontalAlignment="Left" Margin="542,74,0,0" VerticalAlignment="Top" Foreground="#FFA5A5A5" FontSize="14" IsHitTestVisible="False"/>
+        <Label x:Name="lbl_donationSupport" Content="Your donation will be supporting..." HorizontalAlignment="Left" Margin="537,129,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold" Width="239" Foreground="#FF805BEC"/>
+        <Image x:Name="img_PhillyPaws" HorizontalAlignment="Left" Height="81" Margin="511,164,0,0" VerticalAlignment="Top" Width="109" Source="/ImageAssets/PhillyPaws.png" RenderTransformOrigin="0.528,0.371"/>
+        <Image x:Name="img_ACCTPhilly" HorizontalAlignment="Left" Height="86" Margin="651,163,0,0" VerticalAlignment="Top" Width="131" Source="/ImageAssets/ACCTPhilly.png"/>
+        <TextBox x:Name="txt_name" HorizontalAlignment="Left" Margin="242,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247" FontSize="14" FontWeight="SemiBold" IsReadOnly="True" IsTabStop="False"/>
+        <TextBox x:Name="txt_birthDate" HorizontalAlignment="Left" Margin="263,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" FontSize="14" FontWeight="SemiBold" IsReadOnly="True" IsTabStop="False"/>
+        <TextBox x:Name="txt_breed" HorizontalAlignment="Left" Margin="243,110,0,0" VerticalAlignment="Top" Width="246" FontSize="14" FontWeight="SemiBold" IsReadOnly="True" IsTabStop="False" HorizontalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="txt_weight" HorizontalAlignment="Left" Margin="325,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" FontSize="14" FontWeight="SemiBold" IsReadOnly="True" IsTabStop="False"/>
+        <TextBox x:Name="txt_shotUpdate" HorizontalAlignment="Left" Margin="348,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="14" FontWeight="SemiBold" IsReadOnly="True" IsTabStop="False"/>
+        <TextBox x:Name="txt_monthsInKennel" HorizontalAlignment="Left" Margin="315,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" FontSize="14" FontWeight="SemiBold" IsReadOnly="True" IsTabStop="False"/>
+        <TextBox x:Name="txt_color" HorizontalAlignment="Left" Margin="275,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" FontSize="14" FontWeight="SemiBold" IsReadOnly="True" IsTabStop="False"/>
+    </Grid>
+</Window>
